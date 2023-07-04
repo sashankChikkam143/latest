@@ -4,11 +4,15 @@ import { Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import {Button} from "@mui/material";
 import { East } from '@mui/icons-material' 
+import { useNavigate } from "react-router-dom";
 
 import { hotelsRestaurants } from "../../data";
 import HotelRestaurantItem from "../hotel-restaurant-item/HotelRestaurantItem";
 
 const HotelsAndRestaurants = () => {
+
+  const navigate=useNavigate();
+  
   return (
     <Container
       disableGutters
@@ -76,7 +80,9 @@ const HotelsAndRestaurants = () => {
         ))}
       </Box>
       <Box sx={{mt:5,display:"flex", justifyContent: "center",}}>
-      <Button endIcon={<East />} variant="contained">MoreDetails</Button>
+      <Button endIcon={<East />} variant="contained" onClick={()=>{
+            navigate("/tours");
+      }}>MoreDetails</Button>
       </Box>
     </Container>
   );

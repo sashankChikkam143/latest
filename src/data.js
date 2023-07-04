@@ -244,6 +244,37 @@ export const srisailamimages = [
     name: "SRISAILAM TEMPLE",
     image: "https://static.wixstatic.com/media/896d82_64bea7a7281743219b0ebfeabfbfa5e1~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/896d82_64bea7a7281743219b0ebfeabfbfa5e1~mv2.jpg",
   },
+  {
+    id: 7,
+    name: "Mallikarjuna temple",
+    image: "https://static.toiimg.com/photo/msid-46918840,width-96,height-65.cms"
+  },
+  {
+    id: 8,
+    name: "Mallikarjuna temple",
+    image: "https://images.newindianexpress.com/uploads/user/imagelibrary/2023/1/9/w1200X800/Srisailam.jpg"
+  },
+    {
+    id: 9,
+    name: "srisailam",
+    image: "https://images.herzindagi.info/image/2021/Oct/know-srisailam-temple-andhra-pradesh.jpg"
+  },
+  {
+    id: 10,
+    name: "srisailam",
+    image: "https://www.thenewsminute.com/sites/default/files/Eegalapenta_Travelogue_160221_1200x800.jpg",
+  },
+  {
+    id: 11,
+    name: "MALLI KARJUNA TEMPLE",
+    image: "https://www.thedivineindia.com/img/mallikarjuna-jyotirlinga-temple.jpg",
+  },
+  {
+    id: 12,
+    name: "SRISAILAM TEMPLE",
+    image: "https://srisailamtourism.com/images/places-to-visit/srisaila-mallikarjuna-swamy-temple-mallikarjun-jyotirlinga-srisailam-tourism-entry-fee-timings-holidays-reviews-header.jpg",
+  },
+  
 ];
 
 export const serviceitems = [
@@ -387,6 +418,52 @@ export const yadagiriimages = [
     name: "TEMPLE",
     image: yad3,
   },
+];
+
+export const srisailamcabs = [
+  {
+    id: 1,
+    name: "Swift Dzire",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85FriOx0FqrvgzO3FCML1So4dXrk-H8tuvQ&usqp=CAU",
+    details : ["1DAY TRIP 6500/-","2DAY TRIP 8500/-"]
+  },
+  {
+    id: 2,
+    name: "Innova",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9Nnsd6Nb6kfp8-4kxL_OmxdxrR7nG4XJmw&usqp=CAU",
+    details : ["1DAY TRIP 10000/-","2DAY TRIP 13000/-"]
+  }
+];
+
+export const cars = [
+  {
+    id: 1,
+    name: "Swift DZire",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85FriOx0FqrvgzO3FCML1So4dXrk-H8tuvQ&usqp=CAU",
+    details : ["8hours 80kms = 2200/-", "12hours 120kms = 3000/-", "Extra 14/- per km", "Extra hours 150"]
+  },
+  {
+    id: 2,
+    name: "Innova",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9Nnsd6Nb6kfp8-4kxL_OmxdxrR7nG4XJmw&usqp=CAU",
+    details : ["8hours 80kms = 3300/-", "12hours 120kms = 6300/-", "Extra 20/- per km", "Extra hours 200"]
+  }
+];
+
+
+export const packagecars = [
+  {
+    id: 1,
+    name: "Swift Dzire",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS85FriOx0FqrvgzO3FCML1So4dXrk-H8tuvQ&usqp=CAU",
+    details : ["Low Prices"]
+  },
+  {
+    id: 2,
+    name: "Innova",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc9Nnsd6Nb6kfp8-4kxL_OmxdxrR7nG4XJmw&usqp=CAU",
+    details : ["Low Prices"]
+  }
 ];
 
 

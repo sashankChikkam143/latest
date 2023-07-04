@@ -6,8 +6,12 @@ import { Box, Container, Typography,Button } from "@mui/material";
 import { destinations } from "../../data";
 import DestinationItem from "../destination-item";
 import { East, EastRounded } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 const Destionations = () => {
+
+  const navigate=useNavigate();
+
   return (
     <Container
       disableGutters
@@ -64,7 +68,9 @@ const Destionations = () => {
         ))}
       </Box>
       <Box sx={{mt:5,display:"flex", justifyContent: "center",}}>
-      <Button endIcon={<East />} variant="contained">MoreDetails</Button>
+      <Button endIcon={<East />} variant="contained" onClick={()=>{
+            navigate("/tours");
+      }}>MoreDetails</Button>
       </Box>
     </Container>
   );

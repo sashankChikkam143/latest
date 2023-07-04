@@ -1,5 +1,5 @@
 import { Typography,Box,Container,Button,Chip,Divider } from "@mui/material";
-import image from "../assets/shirdi/srisailam1.svg";
+import image from "../assets/tirumala/tir5.svg";
 import React from "react";
 import Footer from "./footer/Footer";
 import { teal ,pink} from "@mui/material/colors";
@@ -8,7 +8,8 @@ import ExcludeDialogBox from "./excludedialogbox";
 import { packagecars } from "../data";
 import MultiActionAreaCard from "./card";
 
-const ShirdiPackage=()=>{
+const TirumalPackage=()=>{
+
   return(
     <Container
   disableGutters
@@ -44,7 +45,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-        SHIRDI TOUR PACKAGE DETAILS
+        TIRUMALA TOUR PACKAGE DETAILS
       </Typography>
     </Box>
   <Box
@@ -75,7 +76,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-       SHIRDI
+       TIRUMALA
       </Typography>
       <Typography
         sx={{
@@ -88,7 +89,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-       Shirdi is a town in the state of Maharashtra, in western India. It's known as the former home of revered spiritual leader Sai Baba, and as a major pilgrimage site. Devotees gather daily at the Sai Baba Temple complex to honor his legacy. Here, the Samadhi Mandir shrine has an ornate marble statue of Sai Baba, alongside his tomb. Close by are Dwarkamai, a mosque where Sai Baba once lived, and tree-lined Lendi Garden.
+       Tirupati is a city in the Indian state of Andhra Pradesh. Its Sri Venkateswara Temple sits atop one of the the 7 peaks of Tirumala Hills, attracting scores of Hindu pilgrims. Sri Venkateswara National Park, home to the temple, also contains the Sri Venkateswara Zoological Park with lions and primates. Nearby, next to a waterfall and cave believed to be sacred, Sri Kapileswara Swamy Temple is dedicated to Lord Shiva.
       </Typography>
     </Box>
     <Box sx={{ flex: 1 }}>
@@ -111,17 +112,17 @@ alignItems: "center",}}>
     <Divider textAlign="left"></Divider>
     <Chip label="TRIP INCLUDES" />
     <list>
-      <li>Dwarkamai Shirdi</li>
-      <li>Sai Teerth Devotional Theme Park</li>
-      <li>Wet N Joy Water Park</li>
-      <li>Shree Saibaba Chavadi</li>
-      <li>Sai Heritage Village</li>
-      <li>Dixit Wada Museum</li>
-      <li>Lendi Garden / Baug</li>
-      <li>Shri Khandoba Mandir</li>
-      <li>Prasadalaya Shirdi , Saibaba</li>
-      <li>LaxmiBai Shinde Temple</li>
+    <li>Sri venkateswara Temple</li>
+    <li>Akasaganga Teertham</li>
+    <li>Papavinasam</li>
+    <li>SVZOO Park</li>
+    <li>SV Museum</li>
+    <li>Padmavathi temple</li>
+    <li>Kanipakam Temple</li>
+    <li>kapilaTheertham</li>
+    <li>Chandragiri fort</li>
     </list>
+
   </Box>
   <Box
     sx={{
@@ -201,8 +202,8 @@ alignItems: "center",}}>
           gap: 4,
           alignItems: "center",}}>
      <Typography textAlign="center">
-     To know About Shirdi Darshanam Timings
-     <a href="https://sai.org.in/" target="_blank"><Button variant="contained">Click Here</Button></a>
+     To know About Tirumala Darshanam Timings
+     <a href="https://www.tirumala.org/" target="_blank"><Button variant="contained">Click Here</Button></a>
     </Typography>
   </Box>
   <Box sx={{mt:5}}>
@@ -211,4 +212,4 @@ alignItems: "center",}}>
 </Container>
 );
 }
-export default ShirdiPackage;
+export default TirumalPackage;

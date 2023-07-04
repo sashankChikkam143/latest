@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Box, Container, Typography } from "@mui/material";
-import bgImage from "../../assets/main/bg-image.svg";
 import MainButton from "../main-button/MainButton";
 import SearchNav from "../search-nav/SearchNav";
 import btnGlobalIcon from "../../assets/main/btn-global-icon.svg";
@@ -17,7 +16,7 @@ const Hero = () => {
           sm: 5,
           md: 2,
         },
-        background: `url(${bgImage}) center center/cover`,
+        background: `url("https://wallpapercave.com/wp/wp3170957.jpg") center center/cover`,
         minHeight: "800px",
         borderRadius: {
           xs: "0px 0px 27px 27px",

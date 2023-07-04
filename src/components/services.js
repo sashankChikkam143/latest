@@ -6,6 +6,7 @@ import { East } from '@mui/icons-material'
 import { serviceitems } from "../data";
 import ServiceItem from "./serviceItem";
 import Footer from "./footer/Footer";
+import { teal } from "@mui/material/colors";
 const Services=()=>{
     return (
         <Container
@@ -20,38 +21,35 @@ const Services=()=>{
             my: 15,
           }}
         >
-          <Box
+         <Box sx={{mt:10, backgroundColor:teal[900], display: "flex",
+  flexDirection: {
+    xs: "column",
+    md: "row",
+  },
+  justifyContent: "center",
+  gap: 4,
+  alignItems: "center",}}>
+          <Typography
             sx={{
-              display: "flex",
-              flexDirection: {
-                xs: "column",
-                md: "row",
+              fontFamily: "Poppins",
+              fontWeight: "600",
+              fontSize: "32px",
+              lineHeight: "48px",
+              // color: "#161414",
+              textAlign: {
+                xs: "center",
+                md: "left",
               },
-              alignItems: "center",
-              justifyContent: "space-between",
-              mb: 8,
-              gap: 2,
             }}
+            color="common.white"
           >
-            <Typography
-              sx={{
-                fontFamily: "Poppins",
-                fontWeight: "600",
-                fontSize: "32px",
-                color: "#161414",
-                textAlign: {
-                  xs: "center",
-                  md: "left",
-                },
-              }}
-            >
-              Services
-            </Typography>
-          </Box>
-    
+            SERVICES
+          </Typography>
+        </Box>
           <Box
             sx={{
               display: "flex",
+              mt:5,
               gap: 4,
               justifyContent: "space-between",
               alignItems: {

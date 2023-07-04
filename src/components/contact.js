@@ -2,24 +2,46 @@ import { useState } from "react";
 import { useRef } from "react";
 import { TextField, Button, Typography, Box ,Container} from "@mui/material";
 import Footer from "./footer";
-import emailjs from "@emailjs/browser"
+import emailjs from "@emailjs/browser";
+import Stack from "@mui/material/Stack";
+import Snackbar from "@mui/material/Snackbar";
+import React from "react";
+import Alert from "@mui/material/Alert";
+import { useNavigate } from "react-router-dom";
+import { sleep } from "./sleep";
+
 
 const ContactForm=()=>{
+
+  const navigate = useNavigate();
 const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const formref=useRef();
 
+  const [open, setOpen] = React.useState(false);
+
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+
+    setOpen(false);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log("hello siddhu");
     emailjs.sendForm('service_0g2q9hp', 'template_37l0aro', formref.current, '5i3MnwSse77iVrti5')
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
        console.log('FAILED...', error);
     });
-
-
+    setOpen(true);
+    sleep(2000).then(()=>{
+      navigate("/home");
+    })
   };
     return(
         <Container
@@ -107,8 +129,15 @@ const [name, setName] = useState("");
             rows={4}
           />
           <Button variant="contained" type="submit" sx={{ mt: 2 }}>
-            Submit
+            submit
           </Button>
+    <Stack spacing={2} sx={{ width: '100%' }}>
+      <Snackbar open={open} autoHideDuration={6000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" variant="filled" sx={{ width: '100%' }}>
+          Details submitted sucessfully
+        </Alert>
+      </Snackbar>
+    </Stack>
         </form>
         </Box>
       </Box>

@@ -1,10 +1,12 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Box, Container, Typography,Button } from "@mui/material";
 import aboutUsImg from "../../assets/main/about-us-img.svg";
 import { East } from '@mui/icons-material' 
 
 const AboutUs = () => {
+
+  const navigate=useNavigate();
   return (
     <Container
       disableGutters
@@ -56,13 +58,13 @@ const AboutUs = () => {
               my: 4,
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            a sapien justo. Nulla facilisis tristique imperdiet. Nullam a
-            placerat odio. Sed in ex augue. Aliquam porta consectetur lorem sit
-            amet ultrices. Class aptent taciti sociosqu ad litora torquent per
-            conubia nostra, per inceptos himenaeos.
+           We are GRRTOURS&TRAVELS provide Rental cars,Tour packages to Srisailam(Mallikarjuna Swamy),
+           Tirumala(Lord balaji), VIJAYAWADA(Kanakadurgamma), YADAGIRIGUTTA (Narasimhaswamy), BADRACHALAM (Sri rama),
+           SHIRDI (Sai baba) with affroadable prices.
           </Typography>
-          <Button endIcon={<East />} variant="contained">More</Button>
+          <Button endIcon={<East />} variant="contained" onClick={()=>{
+            navigate("/about");
+          }}>More</Button>
         </Box>
         <Box sx={{ flex: 1 }}>
           <img

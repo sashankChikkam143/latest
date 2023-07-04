@@ -4,7 +4,7 @@ import AppBar from "@mui/material/AppBar";
 import Container from "@mui/material/Container";
 import { Box, Drawer, Typography ,Button} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import logoimage from '../rjrlogo.jpg';
+import logoimage from '../companylogo1.jpg';
 import { useNavigate } from "react-router-dom";
 import { navItems } from "../../data.js";
 
@@ -134,7 +134,7 @@ const Navbar = () => {
                 transform: "translateX(-50%)",
               }}
             >
-              &#169; RJRTRAVELS
+              &#169; GRRTOURS&CABSSERVICES
             </Typography>
           </Box>
         </Drawer>

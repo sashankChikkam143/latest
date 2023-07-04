@@ -1,5 +1,5 @@
-import { Typography,Box,Container,Button,Chip,Divider } from "@mui/material";
-import image from "../assets/shirdi/srisailam1.svg";
+import { Typography,Box,Container,Button ,Chip,Divider} from "@mui/material";
+import image from "../assets/yadagiri/yadagiri1.svg";
 import React from "react";
 import Footer from "./footer/Footer";
 import { teal ,pink} from "@mui/material/colors";
@@ -8,7 +8,8 @@ import ExcludeDialogBox from "./excludedialogbox";
 import { packagecars } from "../data";
 import MultiActionAreaCard from "./card";
 
-const ShirdiPackage=()=>{
+const YadagiriguttaPackage=()=>{
+
   return(
     <Container
   disableGutters
@@ -44,7 +45,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-        SHIRDI TOUR PACKAGE DETAILS
+       YADAGIRIGUTTA TOUR PACKAGE DETAILS
       </Typography>
     </Box>
   <Box
@@ -75,7 +76,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-       SHIRDI
+       Yadagirigutta
       </Typography>
       <Typography
         sx={{
@@ -88,7 +89,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-       Shirdi is a town in the state of Maharashtra, in western India. It's known as the former home of revered spiritual leader Sai Baba, and as a major pilgrimage site. Devotees gather daily at the Sai Baba Temple complex to honor his legacy. Here, the Samadhi Mandir shrine has an ornate marble statue of Sai Baba, alongside his tomb. Close by are Dwarkamai, a mosque where Sai Baba once lived, and tree-lined Lendi Garden.
+       Sri Lakshmi Narasimha Swamy Temple or simply known as Yadadri or Yadagirigutta temple, is a Hindu temple situated on a hillock in the small town of Yadagirigutta in the Yadadri Bhuvanagiri district of the Indian state of Telangana. Yadadri temple is touted as Telangana’s own Tirupati.
       </Typography>
     </Box>
     <Box sx={{ flex: 1 }}>
@@ -111,16 +112,14 @@ alignItems: "center",}}>
     <Divider textAlign="left"></Divider>
     <Chip label="TRIP INCLUDES" />
     <list>
-      <li>Dwarkamai Shirdi</li>
-      <li>Sai Teerth Devotional Theme Park</li>
-      <li>Wet N Joy Water Park</li>
-      <li>Shree Saibaba Chavadi</li>
-      <li>Sai Heritage Village</li>
-      <li>Dixit Wada Museum</li>
-      <li>Lendi Garden / Baug</li>
-      <li>Shri Khandoba Mandir</li>
-      <li>Prasadalaya Shirdi , Saibaba</li>
-      <li>LaxmiBai Shinde Temple</li>
+      <li>Sri Lakshmi Narasimha Swamy Temple</li>
+      <li>Surendrapuri</li>
+      <li>Kolanupaka Swetamber Jain Mandir</li>
+      <li>Bhongir Fort</li>
+      <li>Lotus Temple</li>
+      <li>Yadadri</li>
+      <li>Baswapur Reservoir</li>
+      <li>Yadadri Surendrapuri Temple</li>
     </list>
   </Box>
   <Box
@@ -201,8 +200,8 @@ alignItems: "center",}}>
           gap: 4,
           alignItems: "center",}}>
      <Typography textAlign="center">
-     To know About Shirdi Darshanam Timings
-     <a href="https://sai.org.in/" target="_blank"><Button variant="contained">Click Here</Button></a>
+     To know About Yadagirigutta Darshanam Timings
+     <a href="https://yadagiriguttasrilakshminarasimhaswamy.org/timings.html" target="_blank"><Button variant="contained">Click Here</Button></a>
     </Typography>
   </Box>
   <Box sx={{mt:5}}>
@@ -211,4 +210,4 @@ alignItems: "center",}}>
 </Container>
 );
 }
-export default ShirdiPackage;
+export default YadagiriguttaPackage;

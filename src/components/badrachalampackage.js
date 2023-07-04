@@ -1,5 +1,5 @@
 import { Typography,Box,Container,Button,Chip,Divider } from "@mui/material";
-import image from "../assets/shirdi/srisailam1.svg";
+import image from "../assets/badrachalam/srisailam1.svg";
 import React from "react";
 import Footer from "./footer/Footer";
 import { teal ,pink} from "@mui/material/colors";
@@ -8,7 +8,9 @@ import ExcludeDialogBox from "./excludedialogbox";
 import { packagecars } from "../data";
 import MultiActionAreaCard from "./card";
 
-const ShirdiPackage=()=>{
+
+const BadrachalamPackage=()=>{
+
   return(
     <Container
   disableGutters
@@ -44,7 +46,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-        SHIRDI TOUR PACKAGE DETAILS
+        BADRACHALAM TOUR PACKAGE DETAILS
       </Typography>
     </Box>
   <Box
@@ -75,7 +77,7 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-       SHIRDI
+       BADRACHALAM
       </Typography>
       <Typography
         sx={{
@@ -88,8 +90,8 @@ alignItems: "center",}}>
         }}
         color="common.white"
       >
-       Shirdi is a town in the state of Maharashtra, in western India. It's known as the former home of revered spiritual leader Sai Baba, and as a major pilgrimage site. Devotees gather daily at the Sai Baba Temple complex to honor his legacy. Here, the Samadhi Mandir shrine has an ornate marble statue of Sai Baba, alongside his tomb. Close by are Dwarkamai, a mosque where Sai Baba once lived, and tree-lined Lendi Garden.
-      </Typography>
+       Bhadrachalam is a town, known as a Hindu pilgrimage site, in the south Indian state of Telangana. Beside the Godavari River, the huge 17th-century Bhadrachalam (or Sita Ramachandraswamy) Temple complex is dedicated to Lord Rama and has many ornate carvings. Other nearby temples include Abhaya Anjaneya Temple, with large painted statues of Hindu gods and goddesses. Passenger boats travel the river to nearby towns.
+    </Typography>
     </Box>
     <Box sx={{ flex: 1 }}>
       <img
@@ -111,16 +113,11 @@ alignItems: "center",}}>
     <Divider textAlign="left"></Divider>
     <Chip label="TRIP INCLUDES" />
     <list>
-      <li>Dwarkamai Shirdi</li>
-      <li>Sai Teerth Devotional Theme Park</li>
-      <li>Wet N Joy Water Park</li>
-      <li>Shree Saibaba Chavadi</li>
-      <li>Sai Heritage Village</li>
-      <li>Dixit Wada Museum</li>
-      <li>Lendi Garden / Baug</li>
-      <li>Shri Khandoba Mandir</li>
-      <li>Prasadalaya Shirdi , Saibaba</li>
-      <li>LaxmiBai Shinde Temple</li>
+        <li>Bhadrachalam Temple - Bhadradri Seetha</li>
+        <li>Bogatha Waterfall</li>
+        <li>Sita Rama Temple.</li>
+        <li>Gautami Nagar Central Park</li>
+        <li>Amba Satram Temple</li>
     </list>
   </Box>
   <Box
@@ -201,8 +198,8 @@ alignItems: "center",}}>
           gap: 4,
           alignItems: "center",}}>
      <Typography textAlign="center">
-     To know About Shirdi Darshanam Timings
-     <a href="https://sai.org.in/" target="_blank"><Button variant="contained">Click Here</Button></a>
+     To know About Bhadrachalam Darshanam Timings
+     <a href="https://bhadrachalamonline.com/index.html" target="_blank"><Button variant="contained">Click Here</Button></a>
     </Typography>
   </Box>
   <Box sx={{mt:5}}>
@@ -211,4 +208,4 @@ alignItems: "center",}}>
 </Container>
 );
 }
-export default ShirdiPackage;
+export default BadrachalamPackage;

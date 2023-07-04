@@ -5,44 +5,48 @@ import Link from "@mui/material/Link";
 import Grid from "@mui/material/Grid";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import { Box, Button } from "@mui/material";
-import {grey} from "@mui/material/colors";
+import {blueGrey} from "@mui/material/colors";
 
 export default function Footer() {
   return (
     <Box
       component="footer"
       sx={{
-        backgroundColor:grey[50],
-        p: 6,
+        backgroundColor:blueGrey[900],
+        color:blueGrey[50],
+        p: 5,
+        mt:6,
+        ml:0,
+        mr:0,
       }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="h6" gutterBottom>
               About Us
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              We are <span>GRRTRAVELS</span>, dedicated to providing the best service to our
+            <Typography variant="body2">
+              We are <span>GRRTOURS&CABSSERVICES</span>, dedicated to providing the best service to our
               customers.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="h6"  gutterBottom>
               Contact Us
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" >
               Shamshabad, Hyderabad
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" >
               Email: grrtourstravels@gmail.com
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2" >
               Phone: 8522058851
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="text.primary" gutterBottom>
+            <Typography variant="h6"  gutterBottom>
               Follow Us
             </Typography>
             <Link href="https://www.facebook.com/" color="inherit">
@@ -69,11 +73,12 @@ export default function Footer() {
           <a href="=+918522058851"><Button variant="contained">CALL US</Button></a>
         </Box>
         <Box mt={5}>
-          <Typography variant="body2" color="text.secondary" align="center">
+          <Typography variant="body2" align="center">
             {"Copyright © "}
             <Link color="inherit" href="https://your-website.com/">
-              GRRTRAVELS
+              GRRTOURS&CABSSERVICES
             </Link>{" "}
+            All Rights Reserved 
             {new Date().getFullYear()}
             {"."}
           </Typography>
